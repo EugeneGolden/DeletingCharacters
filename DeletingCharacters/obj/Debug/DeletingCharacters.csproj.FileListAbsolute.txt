@@ -1,0 +1,6 @@
+c:\users\admin\documents\visual studio 2015\Projects\DeletingCharacters\DeletingCharacters\bin\Debug\DeletingCharacters.exe.config
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\DeletingCharacters\DeletingCharacters\obj\Debug\DeletingCharacters.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\DeletingCharacters\DeletingCharacters\bin\Debug\DeletingCharacters.exe
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\DeletingCharacters\DeletingCharacters\bin\Debug\DeletingCharacters.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\DeletingCharacters\DeletingCharacters\obj\Debug\DeletingCharacters.exe
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\DeletingCharacters\DeletingCharacters\obj\Debug\DeletingCharacters.pdb
