@@ -11,9 +11,10 @@ namespace DeletingCharacters
     {
         //Написать метод, входными параметрами которого являются две строки.
         //Метод должен в первой заданной строке удалить каждый символ, принадлежащий и второй заданной строке.
+        //При решении не использовать готовые строковые функции
         public string DeleteCharacter(string firstString, string secondString)
         {
-            //Конвертируем строку в массивы char
+            //Конвертируем строки в массивы char
             char[] firstStringToArray = firstString.ToCharArray();
             char[] secondStringToArray = secondString.ToCharArray();
 
@@ -37,6 +38,7 @@ namespace DeletingCharacters
                 }
             }
 
+            //Вернем результат в виде строки
             string outputFirstString = null;
             foreach (var str in firstArrayList)
             {
