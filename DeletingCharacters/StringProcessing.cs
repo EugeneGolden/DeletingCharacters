@@ -14,36 +14,26 @@ namespace DeletingCharacters
         //При решении не использовать готовые строковые функции
         public string DeleteCharacter(string firstString, string secondString)
         {
-            //Конвертируем строки в массивы char
-            char[] firstStringToArray = firstString.ToCharArray();
-            char[] secondStringToArray = secondString.ToCharArray();
+            StringBuilder sb = new StringBuilder();
+            HashSet<char> secondStringInSet = new HashSet<char>();
 
-            //Создадим два объекта типа ArrayList для обработки ранее созданных массивов char
-            ArrayList firstArrayList = new ArrayList();
-            ArrayList secondArrayList = new ArrayList();
-
-            //Добавим элменты массивов char в ArrayList объекты
-            firstArrayList.AddRange(firstStringToArray);
-            secondArrayList.AddRange(secondStringToArray);
-
-
-            for (int i = 0; i < firstStringToArray.Length; i++)
+            //Добавим символы второй строки в HashSet
+            for (int i = 0; i < secondString.Length; i++)
             {
-                for (int j = 0; j < secondStringToArray.Length; j++)
+                secondStringInSet.Add(secondString[i]);
+            }
+
+            //Добавим в StringBuilder только те символы, которых нет во второй строке, но есть в первой
+            for (int i = 0; i < firstString.Length; i++)
+            {
+                if (!secondStringInSet.Contains(firstString[i]))
                 {
-                    if (firstStringToArray[i] == secondStringToArray[j])
-                    {
-                        firstArrayList.Remove(firstStringToArray[i]);
-                    }
+                    sb.Append(firstString[i]);
                 }
             }
 
             //Вернем результат в виде строки
-            string outputFirstString = null;
-            foreach (var str in firstArrayList)
-            {
-                outputFirstString += str.ToString();
-            }
+            string outputFirstString = sb.ToString();
             return outputFirstString;
         }
         static void Main(string[] args)
